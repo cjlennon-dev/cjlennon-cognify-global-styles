@@ -7,7 +7,7 @@
   "scripts": {
     "bump": "npm version patch  -m \"Upgrade to %s\"",
     "push": "git add . & git commit -m '.' & git push",
-    "build": "autoless --no-watch src & autoless --no-watch dist"
+    "build": "autoless --no-watch src & copy src\\cjlennon-cognify-global-styles.css dist\\cjlennon-cognify-global-styles.css"
   },
   "license": "ISC",
   "private": true,
