@@ -1,19 +1,16 @@
-# cjlennon-cognify-global-style
+# cjlennon-cognify-global-styles
 
-LESS files and compiled CSS for cognify CSS styling
+LESS files and compiled CSS for cognify web application CSS styling
 
 ## Installation
 
 - Clone the repo
-- Build the CSS
+- Compile the files in the `src/less` directory.
+
+- running `npm run build` will run the 'build' script contained in `package.json`.  This script will build the less folder and move the master css (`cjlennon-cognify-global-styles.css`) to the 'dist/css' folder.  Note that this script has been tested on Windows but may need modification for linux environments (uses the COPY command and escapes the slashes)
 
 ## Deployment
 
-### Manual Deployment
+File `cjlennon-cognify-global-styles.css` contains all the css styling required.  Link to this file in your HTML page e.g. by hosting it yourself, uploading to a web server or using rawgit.com
 
-Upload all-components.css to a public file server e.g. an S3 bucket
-
-### Deployment as part of AWS CodeBuild
-
-Set `buildspec.yml` as the build file
 

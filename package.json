@@ -1,16 +1,16 @@
 {
-  "name": "cjlennon-cognify-global-style",
+  "name": "cjlennon-cognify-global-styles",
   "author": "Chris Lennon",
-  "version": "0.1.0",
-  "description": "Global CSS Styling for cognify",
-  "main": "index.js",
-  "scripts": {
-    "bump": "npm version patch  -m \"Upgrade to %s\"",
-    "push": "git add . & git commit -m '.' & git push",
-    "build": "autoless --no-watch src & copy src\\cjlennon-cognify-global-styles.css dist\\cjlennon-cognify-global-styles.css"
+  "version": "0.1.1",
+  "description": "Global CSS Styling for cognify web application",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/cjlennon/cjlennon-cognify-global-styles.git"
   },
-  "license": "ISC",
-  "private": true,
+  "scripts": {
+    "build": "autoless --no-watch src\\less & copy src\\less\\cjlennon-cognify-global-styles.css dist\\css\\cjlennon-cognify-global-styles.css"
+  },
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "autoless": "^0.1.7"
