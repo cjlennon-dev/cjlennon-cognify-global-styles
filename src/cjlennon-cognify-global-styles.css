@@ -1,7 +1,7 @@
 /* BUTTONS */
 /* over-write AdminLTE colours. */
 .btn-primary {
-  background-color: blue;
+  background-color: pink;
   border-color: #233140;
 }
 .btn-primary:hover,
