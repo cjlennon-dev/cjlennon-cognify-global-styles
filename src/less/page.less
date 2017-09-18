@@ -1,0 +1,60 @@
+/* styling for the application main style, two top navs, the side nav and main content */
+
+@nav-size-total:110px;
+
+.content-header {
+  margin-top:0px ;
+  margin-left:0px ;
+}
+
+
+.content-header h1 {
+  /* make H1 larger than AdminLTE has it and align it */
+  font-size: 50px;
+  margin-top:-12px;
+  margin-left: -15px;
+  margin-bottom:10px;
+}
+
+.content-header ol{
+  /* make sure breadcrumb is right-aligned */
+  padding: none;
+  margin: -10px;
+}
+
+.cognify-page-container{
+  /* container holds the left menu and the content. */
+  background-color:#f9fafc;
+  margin-top:0px;
+  padding-top:0px;
+    min-height: calc(~"100% - " @nav-size-total);
+}
+
+
+.content{
+  /* main page content, remove padding and margins */
+  margin: 0px;
+  padding : 0px;
+}
+
+.main-box.box{
+  /* give the main box a grunty drop shadow */
+  box-shadow: 0 1px 10px rgba(0,0,0,0.2)
+}
+
+//*/
+@media screen and (max-width: 992px) {
+  /*respond to medium width */
+  .content-header ol{
+    /* hide breadscrumb */
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* respond to small width */
+  /* Make H1 smaller */
+  .content-header h1 {
+    font-size: 30px;
+  }
+}

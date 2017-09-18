@@ -1,0 +1,212 @@
+/* import the bootstrap varialbes */
+/* import the AdminLTE varialbes */
+/* variable over-rides */
+/* BUTTONS */
+/* style primary button using @brand-primary */
+.btn-primary {
+  background-color: #2c3e50;
+  border-color: #233140;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.hover {
+  background-color: #233140;
+}
+/* top navbar.  extends bootstrap navbar */
+/* this component has a white background and contains the logo, search box and right hand icons */
+/* not visible when collapsed  */
+.cognify-top-nav {
+  background-color: white;
+  border-radius: 0;
+  border: 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.cognify-top-nav .top-nav-search {
+  /* search box within top nav */
+  position: absolute;
+  padding-left: 210px;
+  padding-top: 8px;
+  margin: auto;
+}
+.cognify-top-nav .top-nav-search .form-control {
+  min-width: 350px;
+}
+.cognify-top-nav .top-nav-search .input-group-addon {
+  cursor: pointer;
+}
+.cognify-top-nav .top-nav-search a {
+  color: #2c3e50;
+}
+.cognify-top-nav .top-nav-search a:hover {
+  color: #18bc9c;
+}
+.cognify-top-nav .navbar-nav > li > a {
+  /* icons on the right hand side */
+  color: #2c3e50;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 10px ;
+  padding-right: 10px ;
+}
+.cognify-top-nav .navbar-nav > li > a:hover {
+  color: #18bc9c;
+}
+/* MODULE NAV BAR */
+/* this is the second nav menu (displays the modules) */
+.cognify-module-nav {
+  background-color: #2c3e50;
+  min-height: 0px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+}
+.cognify-module-nav li > a {
+  /* navbar menu items (links) */
+  color: white !important;
+  font-size: 16px;
+  padding-top: 9px ;
+  padding-bottom: 9px ;
+}
+.cognify-module-nav li > a:hover {
+  color: #18bc9c !important;
+}
+.cognify-module-nav .active > a {
+  /* selected item display */
+  background-color: #1a242f !important;
+}
+.cognify-module-nav .active > a:hover {
+  color: white !important;
+}
+@media screen and (min-width: 768px) {
+  .cognify-module-nav {
+    /* module-nav is responsive.  Different menu items are visible depending on whether the menu
+  is collapsed or wide */
+  }
+  .cognify-module-nav .navbar-nav {
+    margin-left: 195px;
+  }
+  .cognify-module-nav .module-nav-collapsed-only {
+    display: none;
+  }
+  .cognify-module-nav .module-nav-full-only {
+    display: inherit;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cognify-module-nav .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+  .cognify-module-nav .module-nav-collapsed-only {
+    display: inherit;
+    box-shadow: none;
+    border: none;
+  }
+  .cognify-module-nav .module-nav-full-only {
+    display: none;
+  }
+}
+/* LEFT HAND NAVIGATION MENU */
+/* displays icons and text in full screen, icons only in smaller screen and does not display at all in
+phone sized displays*/
+/* we use the bootstrap list-group component as the basis of the left hand menu*/
+.cognify-left-nav {
+  border-right: 1px solid #d2d6de;
+  font-size: 16px;
+  border-radius: 0px;
+  background-color: transparent;
+}
+.cognify-left-nav a {
+  /* menu items */
+  color: #444444;
+  position: relative;
+}
+.cognify-left-nav a:hover {
+  background-color: #f9fafc;
+  color: #444444;
+}
+.cognify-left-nav a.menu-selected {
+  /* menu item in selected mode */
+  color: #18bc9c;
+  background-color: white;
+}
+.cognify-left-nav i {
+  /* icon and text positioned as absolute so the text can line up and not be pushed out by a wider icon */
+  position: absolute;
+}
+.cognify-left-nav span {
+  position: absolute;
+  margin-left: 30px;
+}
+.cognify-left-nav span.spacer {
+  /* spacer so the menu items have proper height.  May be a better way of doing this, without a spacer? */
+  position: relative;
+  visibility: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 992px) {
+  .cognify-left-nav {
+    /* menu items - smaller screens */
+    /* show icons only (i.e. not the text) and show them as larger */
+  }
+  .cognify-left-nav span {
+    display: none;
+  }
+  .cognify-left-nav i {
+    position: relative;
+    font-size: 18px;
+  }
+}
+/* styling for the application main style, two top navs, the side nav and main content */
+.content-header {
+  margin-top: 0px ;
+  margin-left: 0px ;
+}
+.content-header h1 {
+  /* make H1 larger than AdminLTE has it and align it */
+  font-size: 50px;
+  margin-top: -12px;
+  margin-left: -15px;
+  margin-bottom: 10px;
+}
+.content-header ol {
+  /* make sure breadcrumb is right-aligned */
+  padding: none;
+  margin: -10px;
+}
+.cognify-page-container {
+  /* container holds the left menu and the content. */
+  background-color: #f9fafc;
+  margin-top: 0px;
+  padding-top: 0px;
+  min-height: calc(100% -  110px);
+}
+.content {
+  /* main page content, remove padding and margins */
+  margin: 0px;
+  padding: 0px;
+}
+.main-box.box {
+  /* give the main box a grunty drop shadow */
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 992px) {
+  /*respond to medium width */
+  .content-header ol {
+    /* hide breadscrumb */
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* respond to small width */
+  /* Make H1 smaller */
+  .content-header h1 {
+    font-size: 30px;
+  }
+}

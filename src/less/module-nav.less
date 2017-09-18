@@ -1,0 +1,68 @@
+@import "variables.less";
+
+/* MODULE NAV BAR */
+
+/* this is the second nav menu (displays the modules) */
+
+.cognify-module-nav {
+
+  background-color: @brand-primary;
+  min-height: 0px;
+  border-radius: 0px;
+  margin-bottom:0px;
+  border:0px;
+
+
+  li>a {
+    /* navbar menu items (links) */
+    color:white !important;
+    font-size:16px;
+    padding-top: 9px ;
+    padding-bottom: 9px ;
+    &:hover {
+      color: @brand-success!important;
+    }
+  }
+
+
+  .active>a{
+    /* selected item display */
+    background-color: darken(@brand-primary, 10%)!important;
+    &:hover {
+      color: white !important;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+  /* module-nav is responsive.  Different menu items are visible depending on whether the menu
+  is collapsed or wide */
+    .navbar-nav {
+      margin-left: 195px;   // menu has a fixed left margin in large mode
+    }
+
+    .module-nav-collapsed-only{
+      display: none;
+    }
+
+    .module-nav-full-only{
+      display:inherit;
+      box-shadow: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar-collapse{
+      border: none;
+      box-shadow: none;
+    }
+    .module-nav-collapsed-only{
+      display:inherit;
+      box-shadow: none;
+      border: none;
+    }
+    .module-nav-full-only{
+      display: none;
+    }
+  }
+}

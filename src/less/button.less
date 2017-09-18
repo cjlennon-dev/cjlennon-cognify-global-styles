@@ -1,13 +1,11 @@
 
-@import "../common/variables.less"; 
-
+@import "variables.less"; 
 
 /* BUTTONS */
 
-/* over-write AdminLTE colours. */
+/* style primary button using @brand-primary */
 .btn-primary {
-  //background-color: @brand-primary;
-  background-color: pink;
+  background-color: @brand-primary;
   border-color: darken(@brand-primary, 5%);
   &:hover, &:active, &.hover {
     background-color: darken(@brand-primary, 5%);

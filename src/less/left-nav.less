@@ -1,0 +1,64 @@
+@import "variables.less"; 
+
+/* LEFT HAND NAVIGATION MENU */
+/* displays icons and text in full screen, icons only in smaller screen and does not display at all in
+phone sized displays*/
+/* we use the bootstrap list-group component as the basis of the left hand menu*/
+
+.cognify-left-nav  {
+  border-right: 1px solid @gray-lte;
+  font-size:16px;
+  border-radius: 0px;
+  background-color:transparent;
+
+
+  a {
+    /* menu items */
+    color: @sidebar-light-color ;
+    position: relative;
+    &:hover {
+      background-color: @sidebar-light-bg;
+      color: @sidebar-light-color;
+    }
+  }
+
+ 
+  a.menu-selected {
+     /* menu item in selected mode */
+    color:  @brand-success;
+    background-color:white;
+  }
+
+
+  i{
+    /* icon and text positioned as absolute so the text can line up and not be pushed out by a wider icon */
+    position: absolute;
+  }
+
+  span{
+    position: absolute;
+    margin-left: 30px;
+  }
+
+ 
+  span.spacer{
+    /* spacer so the menu items have proper height.  May be a better way of doing this, without a spacer? */
+    position: relative;
+    visibility: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 992px) {
+  /* menu items - smaller screens */
+  /* show icons only (i.e. not the text) and show them as larger */
+    span{
+      display: none;
+    }
+
+    i{
+      position: relative;
+      font-size: 18px;
+    }
+  }
+}
