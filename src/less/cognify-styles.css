@@ -110,6 +110,12 @@
   .cognify-module-nav .module-nav-full-only {
     display: none;
   }
+  .cognify-module-nav .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+  }
 }
 /* LEFT HAND NAVIGATION MENU */
 /* displays icons and text in full screen, icons only in smaller screen and does not display at all in
