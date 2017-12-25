@@ -1,0 +1,1 @@
+.app-table class is now cjlennon-cognify-table

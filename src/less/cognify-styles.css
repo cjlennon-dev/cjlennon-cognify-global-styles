@@ -1,5 +1,5 @@
-/* import the bootstrap varialbes */
-/* import the AdminLTE varialbes */
+/* import the bootstrap variables */
+/* import the AdminLTE varialbles */
 /* variable over-rides */
 /* BUTTONS */
 /* style primary button using @brand-primary */
@@ -219,33 +219,33 @@ phone sized displays*/
 .bootstrap-table .page-list {
   display: none!important;
 }
-.app-table .button {
+.cjlennon-cognify-table .button {
   color: #eeeeee;
   cursor: pointer;
   vertical-align: middle;
   padding-right: 10px;
 }
-.app-table .edit:hover {
+.cjlennon-cognify-table .edit:hover {
   color: #0073b7;
 }
-.app-table .delete:hover {
+.cjlennon-cognify-table .delete:hover {
   color: #dd4b39;
 }
-.app-table .narrow-only {
+.cjlennon-cognify-table .narrow-only {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .app-table .narrow-only {
+  .cjlennon-cognify-table .narrow-only {
     display: table-cell;
   }
-  .app-table .wide-only {
+  .cjlennon-cognify-table .wide-only {
     display: none;
   }
-  .app-table .button {
+  .cjlennon-cognify-table .button {
     color: #0a79df;
   }
 }
-.app-table td.circle {
+.cjlennon-cognify-table td.circle {
   padding-left: 30px!important;
   padding-top: 2px!important;
   padding-right: 0px!important;
@@ -255,7 +255,7 @@ phone sized displays*/
   margin-right: 0px!important;
   margin-bottom: 3px!important;
 }
-.app-table td.circle:before {
+.cjlennon-cognify-table td.circle:before {
   display: block;
   padding: 0px;
   width: 38px;
@@ -270,107 +270,107 @@ phone sized displays*/
   margin-top: 1px!important;
   margin-bottom: 1px!important;
 }
-.app-table td.circle.A:before {
+.cjlennon-cognify-table td.circle.A:before {
   content: "A";
   background: Aquamarine;
 }
-.app-table td.circle.B:before {
+.cjlennon-cognify-table td.circle.B:before {
   content: "B";
   background: Cyan ;
 }
-.app-table td.circle.C:before {
+.cjlennon-cognify-table td.circle.C:before {
   content: "C";
   background: Chocolate;
 }
-.app-table td.circle.D:before {
+.cjlennon-cognify-table td.circle.D:before {
   content: "D";
   background: DeepSkyBlue ;
 }
-.app-table td.circle.E:before {
+.cjlennon-cognify-table td.circle.E:before {
   content: "E";
   background: DarkKhaki ;
 }
-.app-table td.circle.F:before {
+.cjlennon-cognify-table td.circle.F:before {
   content: "F";
   background: FireBrick ;
 }
-.app-table td.circle.G:before {
+.cjlennon-cognify-table td.circle.G:before {
   content: "G";
   background: GreenYellow  ;
 }
-.app-table td.circle.H:before {
+.cjlennon-cognify-table td.circle.H:before {
   content: "H";
   background: HotPink;
 }
-.app-table td.circle.I:before {
+.cjlennon-cognify-table td.circle.I:before {
   content: "I";
   background: DarkOrange    ;
 }
-.app-table td.circle.J:before {
+.cjlennon-cognify-table td.circle.J:before {
   content: "J";
   background: GoldenRod  ;
 }
-.app-table td.circle.K:before {
+.cjlennon-cognify-table td.circle.K:before {
   content: "K";
   background: Khaki  ;
 }
-.app-table td.circle.L:before {
+.cjlennon-cognify-table td.circle.L:before {
   content: "L";
   background: Lavender  ;
 }
-.app-table td.circle.M:before {
+.cjlennon-cognify-table td.circle.M:before {
   content: "M";
   background: Magenta  ;
 }
-.app-table td.circle.N:before {
+.cjlennon-cognify-table td.circle.N:before {
   content: "N";
   background: Gold  ;
 }
-.app-table td.circle.O:before {
+.cjlennon-cognify-table td.circle.O:before {
   content: "O";
   background: Olive  ;
 }
-.app-table td.circle.P:before {
+.cjlennon-cognify-table td.circle.P:before {
   content: "P";
   background: PaleGreen ;
 }
-.app-table td.circle.Q:before {
+.cjlennon-cognify-table td.circle.Q:before {
   content: "Q";
   background: LightSlateGray  ;
 }
-.app-table td.circle.R:before {
+.cjlennon-cognify-table td.circle.R:before {
   content: "R";
   background: RoyalBlue  ;
 }
-.app-table td.circle.S:before {
+.cjlennon-cognify-table td.circle.S:before {
   content: "S";
   background: Salmon  ;
 }
-.app-table td.circle.T:before {
+.cjlennon-cognify-table td.circle.T:before {
   content: "T";
   background: Teal   ;
 }
-.app-table td.circle.U:before {
+.cjlennon-cognify-table td.circle.U:before {
   content: "U";
   background: Red ;
 }
-.app-table td.circle.V:before {
+.cjlennon-cognify-table td.circle.V:before {
   content: "V";
   background: Violet  ;
 }
-.app-table td.circle.W:before {
+.cjlennon-cognify-table td.circle.W:before {
   content: "W";
   background: WhiteSmoke   ;
 }
-.app-table td.circle.X:before {
+.cjlennon-cognify-table td.circle.X:before {
   content: "X";
   background: Tomato  ;
 }
-.app-table td.circle.Y:before {
+.cjlennon-cognify-table td.circle.Y:before {
   content: "Y";
   background: Yellow;
 }
-.app-table td.circle.Z:before {
+.cjlennon-cognify-table td.circle.Z:before {
   content: "Z";
   background: Peru  ;
 }
