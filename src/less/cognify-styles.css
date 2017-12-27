@@ -1,6 +1,16 @@
 /* import the bootstrap variables */
 /* import the AdminLTE varialbles */
 /* variable over-rides */
+.cognify-logo {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+.cognify-logo a {
+  color: #eb3f17;
+  font-family: montserrat;
+}
 /* BUTTONS */
 /* style primary button using @brand-primary */
 .btn-primary {
@@ -11,49 +21,6 @@
 .btn-primary:active,
 .btn-primary.hover {
   background-color: #233140;
-}
-/* top navbar.  extends bootstrap navbar */
-/* this component has a white background and contains the logo, search box and right hand icons */
-/* not visible when collapsed  */
-.cognify-top-nav {
-  background-color: white;
-  border-radius: 0;
-  border: 0px;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.cognify-top-nav .top-nav-search {
-  /* search box within top nav */
-  position: absolute;
-  padding-left: 210px;
-  padding-top: 8px;
-  margin: auto;
-}
-.cognify-top-nav .top-nav-search .form-control {
-  min-width: 350px;
-}
-.cognify-top-nav .top-nav-search .input-group-addon {
-  cursor: pointer;
-}
-.cognify-top-nav .top-nav-search a {
-  color: #2c3e50;
-}
-.cognify-top-nav .top-nav-search a:hover {
-  color: #18bc9c;
-}
-.cognify-top-nav .navbar-nav > li > a {
-  /* icons on the right hand side */
-  color: #2c3e50;
-  margin-top: 0px;
-  padding-top: 20px;
-  padding-bottom: 0px;
-  padding-left: 10px ;
-  padding-right: 10px ;
-}
-.cognify-top-nav .navbar-nav > li > a:hover {
-  color: #18bc9c;
 }
 /* MODULE NAV BAR */
 /* this is the second nav menu (displays the modules) */
