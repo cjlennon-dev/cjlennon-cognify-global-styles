@@ -1,1 +1,4 @@
 .app-table class is now cjlennon-cognify-table
+
+ - convert this to the less npm module as used by settings etc
+ - the adminLTE variables maybe link to the production rawgit URL
