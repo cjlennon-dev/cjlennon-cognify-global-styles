@@ -1,74 +1,12 @@
-/* import the bootstrap variables */
-/* import the AdminLTE variables */
-/* variable over-rides */
-.cognify-logo {
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: 25px;
-  font-weight: 600;
+/*
+ * alerts
+ * extends / over-rides the AdminLTE 'alerts.less' style values
+ * -----------------------------------------------------------------------
+ */
+.alert {
+  font-size: medium;
 }
-.cognify-logo a {
-  color: #eb3f17;
-  font-family: montserrat;
-}
-/* BUTTONS */
-/* style primary button using @brand-primary */
-.btn-primary {
-  background-color: #2c3e50;
-  border-color: #233140;
-}
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary.hover {
-  background-color: #233140;
-}
-/* styling for the application main style, two top navs, the side nav and main content */
-.content-header {
-  margin-top: 0px ;
-  margin-left: 0px ;
-}
-.content-header h1 {
-  /* make H1 larger than AdminLTE has it and align it */
-  font-size: 50px;
-  margin-top: -12px;
-  margin-left: -15px;
-  margin-bottom: 10px;
-}
-.content-header ol {
-  /* make sure breadcrumb is right-aligned */
-  padding: none;
-  margin: -10px;
-}
-.cognify-page-container {
-  /* container holds the left menu and the content. */
-  background-color: #f9fafc;
-  margin-top: 0px;
-  padding-top: 0px;
-  min-height: calc(100% -  110px);
-}
-.content {
-  /* main page content, remove padding and margins */
-  margin: 0px;
-  padding: 0px;
-}
-.main-box.box {
-  /* give the main box a grunty drop shadow */
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-}
-@media screen and (max-width: 992px) {
-  /*respond to medium width */
-  .content-header ol {
-    /* hide breadscrumb */
-    display: none !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* respond to small width */
-  /* Make H1 smaller */
-  .content-header h1 {
-    font-size: 30px;
-  }
-}
+/*don't give the user the option to choose rows per page, this just clutters up the screen*/
 .bootstrap-table .page-list {
   display: none!important;
 }
@@ -98,132 +36,122 @@
     color: #0a79df;
   }
 }
-.cjlennon-cognify-table td.circle {
-  padding-left: 30px!important;
-  padding-top: 2px!important;
-  padding-right: 0px!important;
-  padding-bottom: 2px!important;
-  margin-left: 0px!important;
-  margin-top: 3px!important;
-  margin-right: 0px!important;
-  margin-bottom: 3px!important;
-}
-.cjlennon-cognify-table td.circle:before {
-  display: block;
-  padding: 0px;
-  width: 38px;
-  height: 38px;
-  line-height: 36px;
+.cognify-logo {
+  font-size: 35px;
   text-align: center;
-  vertical-align: middle;
-  border-radius: 50%;
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: 32px;
-  margin-top: 1px!important;
-  margin-bottom: 1px!important;
+  margin-bottom: 25px;
+  font-weight: 600;
 }
-.cjlennon-cognify-table td.circle.A:before {
-  content: "A";
-  background: Aquamarine;
+.cognify-logo a {
+  color: #eb3f17;
+  font-family: montserrat;
 }
-.cjlennon-cognify-table td.circle.B:before {
-  content: "B";
-  background: Cyan ;
+.box {
+  font-size: medium;
 }
-.cjlennon-cognify-table td.circle.C:before {
-  content: "C";
-  background: Chocolate;
+.main-box.box {
+  /* give the main box a grunty drop shadow */
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
 }
-.cjlennon-cognify-table td.circle.D:before {
-  content: "D";
-  background: DeepSkyBlue ;
+/*
+ * buttons
+ * --------------------------------------------------
+ */
+/* extend / over-ride the AdminLTE buttons.less styling */
+/* style primary button using @brand-primary */
+.btn-primary {
+  background-color: #2c3e50;
+  border-color: #233140;
 }
-.cjlennon-cognify-table td.circle.E:before {
-  content: "E";
-  background: DarkKhaki ;
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.hover {
+  background-color: #233140;
 }
-.cjlennon-cognify-table td.circle.F:before {
-  content: "F";
-  background: FireBrick ;
+.content {
+  /* main page content, remove padding and margins */
+  margin: 0px;
+  padding: 0px;
 }
-.cjlennon-cognify-table td.circle.G:before {
-  content: "G";
-  background: GreenYellow  ;
+.content-header {
+  margin-top: 0px ;
+  margin-left: 0px ;
 }
-.cjlennon-cognify-table td.circle.H:before {
-  content: "H";
-  background: HotPink;
+.content-header h1 {
+  /* make H1 larger than AdminLTE has it and align it */
+  font-size: 50px;
+  margin-top: -12px;
+  margin-left: -15px;
+  margin-bottom: 10px;
 }
-.cjlennon-cognify-table td.circle.I:before {
-  content: "I";
-  background: DarkOrange    ;
+.content-header ol {
+  /* make sure breadcrumb is right-aligned */
+  padding: none;
+  margin: -10px;
 }
-.cjlennon-cognify-table td.circle.J:before {
-  content: "J";
-  background: GoldenRod  ;
+/* styling for the application main style, two top navs, the side nav and main content */
+.cognify-page-container {
+  /* container holds the left menu and the content. */
+  background-color: #f9fafc;
+  margin-top: 0px;
+  padding-top: 0px;
+  min-height: calc(100% -  110px);
 }
-.cjlennon-cognify-table td.circle.K:before {
-  content: "K";
-  background: Khaki  ;
+@media screen and (max-width: 992px) {
+  /*respond to medium width */
+  .content-header ol {
+    /* hide breadscrumb */
+    display: none !important;
+  }
 }
-.cjlennon-cognify-table td.circle.L:before {
-  content: "L";
-  background: Lavender  ;
+@media screen and (max-width: 768px) {
+  /* respond to small width */
+  /* Make H1 smaller */
+  .content-header h1 {
+    font-size: 30px;
+  }
 }
-.cjlennon-cognify-table td.circle.M:before {
-  content: "M";
-  background: Magenta  ;
-}
-.cjlennon-cognify-table td.circle.N:before {
-  content: "N";
-  background: Gold  ;
-}
-.cjlennon-cognify-table td.circle.O:before {
-  content: "O";
-  background: Olive  ;
-}
-.cjlennon-cognify-table td.circle.P:before {
-  content: "P";
-  background: PaleGreen ;
-}
-.cjlennon-cognify-table td.circle.Q:before {
-  content: "Q";
-  background: LightSlateGray  ;
-}
-.cjlennon-cognify-table td.circle.R:before {
-  content: "R";
-  background: RoyalBlue  ;
-}
-.cjlennon-cognify-table td.circle.S:before {
-  content: "S";
-  background: Salmon  ;
-}
-.cjlennon-cognify-table td.circle.T:before {
-  content: "T";
-  background: Teal   ;
-}
-.cjlennon-cognify-table td.circle.U:before {
-  content: "U";
-  background: Red ;
-}
-.cjlennon-cognify-table td.circle.V:before {
-  content: "V";
-  background: Violet  ;
-}
-.cjlennon-cognify-table td.circle.W:before {
-  content: "W";
-  background: WhiteSmoke   ;
-}
-.cjlennon-cognify-table td.circle.X:before {
-  content: "X";
-  background: Tomato  ;
-}
-.cjlennon-cognify-table td.circle.Y:before {
-  content: "Y";
-  background: Yellow;
-}
-.cjlennon-cognify-table td.circle.Z:before {
-  content: "Z";
-  background: Peru  ;
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+/* direct port from  https://getbootstrap.com/examples/offcanvas/offcanvas.css */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  /* row-offcanvas-right */
+  .row-offcanvas-right {
+    /* row-offcanvas-right */
+    right: 0;
+  }
+  .row-offcanvas-left {
+    left: 0;
+  }
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -50%;
+    /* 6 columns */
+  }
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -50%;
+    /* 6 columns */
+  }
+  .row-offcanvas-right.active {
+    right: 50%;
+    /* 6 columns */
+  }
+  .row-offcanvas-left.active {
+    left: 50%;
+    /* 6 columns */
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    /* 6 columns */
+  }
 }

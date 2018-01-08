@@ -2,25 +2,6 @@
 
 @nav-size-total:110px;
 
-.content-header {
-  margin-top:0px ;
-  margin-left:0px ;
-}
-
-
-.content-header h1 {
-  /* make H1 larger than AdminLTE has it and align it */
-  font-size: 50px;
-  margin-top:-12px;
-  margin-left: -15px;
-  margin-bottom:10px;
-}
-
-.content-header ol{
-  /* make sure breadcrumb is right-aligned */
-  padding: none;
-  margin: -10px;
-}
 
 .cognify-page-container{
   /* container holds the left menu and the content. */
@@ -30,19 +11,6 @@
     min-height: calc(~"100% - " @nav-size-total);
 }
 
-
-.content{
-  /* main page content, remove padding and margins */
-  margin: 0px;
-  padding : 0px;
-}
-
-.main-box.box{
-  /* give the main box a grunty drop shadow */
-  box-shadow: 0 1px 10px rgba(0,0,0,0.2)
-}
-
-//*/
 @media screen and (max-width: 992px) {
   /*respond to medium width */
   .content-header ol{
@@ -56,5 +24,59 @@
   /* Make H1 smaller */
   .content-header h1 {
     font-size: 30px;
+  }
+}
+
+
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+
+/* direct port from  https://getbootstrap.com/examples/offcanvas/offcanvas.css */
+
+ @media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  /* row-offcanvas-right */
+  // row-offcanvas-right 
+  .row-offcanvas-right {
+  /* row-offcanvas-right */
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
   }
 }
