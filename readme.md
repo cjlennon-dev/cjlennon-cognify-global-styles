@@ -47,10 +47,10 @@ For a quick start, include the following links in the `<head>` tag of your html.
       <link rel="stylesheet" href="https://rawgit.com/cjlennon/AdminLTE/master/dist/css/AdminLTE.css">
      
       <!-- styles from the cjlennon-cognify-global-styles module -->
-      <link rel="stylesheet" href="https://rawgit.com/cjlennon/cjlennon-cognify-global-styles/master/dist/css/cognify-styles.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cjlennon/cjlennon-cognify-global-styles/dist/css/cognify-styles.css">
     
       <!-- support off-canvas collapse -->
-      <link rel="stylesheet" href="https://rawgit.com/cjlennon/cjlennon-cognify-global-styles/master/dist/css/offcanvas.css"> 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cjlennon/cjlennon-cognify-global-styles/dist/css/offcanvas.css"> 
 ````
 ## More information (developers)
 
